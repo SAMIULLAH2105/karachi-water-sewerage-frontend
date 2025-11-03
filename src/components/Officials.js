@@ -13,7 +13,9 @@ export default function Officials() {
 
     const fetchOfficials = async () => {
       try {
-        const res = await fetch("http://localhost:1337/api/leadership-teams?populate=*");
+        const res = await fetch(
+          "https://karachi-water-sewerage-backend-production.up.railway.app/api/leadership-teams?populate=*"
+        );
         const data = await res.json();
         let fetchedOfficials = data?.data || [];
 
@@ -58,7 +60,7 @@ export default function Officials() {
         officials.map((official, index) => {
           const isEven = index % 2 === 0;
           const imageUrl = official?.profile?.url
-            ? `http://localhost:1337${official.profile.url}`
+            ? `https://karachi-water-sewerage-backend-production.up.railway.app${official.profile.url}`
             : "/assets/default.png";
 
           return (

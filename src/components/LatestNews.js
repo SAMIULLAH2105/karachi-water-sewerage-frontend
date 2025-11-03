@@ -65,7 +65,7 @@
 //     );
 //   }
 
-//   const baseUrl = "http://localhost:1337";
+//   const baseUrl = "https://karachi-water-sewerage-backend-production.up.railway.app";
 
 //   return (
 //     <div className="max-w-7xl mx-auto  overflow-hidden bg-white relative">
@@ -274,7 +274,8 @@ export default function LatestNews() {
     );
   }
 
-  const baseUrl = "http://localhost:1337";
+  const baseUrl =
+    "https://karachi-water-sewerage-backend-production.up.railway.app";
 
   return (
     <div
@@ -298,7 +299,8 @@ export default function LatestNews() {
             }}
           >
             {translatedPosts.map((post, index) => {
-              const date = post?.published_date || post?.attributes?.publishedAt;
+              const date =
+                post?.published_date || post?.attributes?.publishedAt;
               const formattedDate = new Date(date).toLocaleDateString("ur-PK");
               return (
                 <div

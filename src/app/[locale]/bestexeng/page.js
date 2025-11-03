@@ -14,7 +14,9 @@ export default function BestExEngPage() {
 
     const fetchEngineer = async () => {
       try {
-        const res = await fetch("http://localhost:1337/api/engineers?populate=*");
+        const res = await fetch(
+          "https://karachi-water-sewerage-backend-production.up.railway.app/api/engineers?populate=*"
+        );
         const data = await res.json();
         const engineerData = data?.data?.[0] || {};
         setEngineer(engineerData);
@@ -27,8 +29,10 @@ export default function BestExEngPage() {
   }, []);
 
   const getImageUrl = () => {
-    const baseUrl = "http://localhost:1337";
-    const imageUrl = engineer?.profile?.formats?.medium?.url || engineer?.profile?.url;
+    const baseUrl =
+      "https://karachi-water-sewerage-backend-production.up.railway.app";
+    const imageUrl =
+      engineer?.profile?.formats?.medium?.url || engineer?.profile?.url;
     return imageUrl ? `${baseUrl}${imageUrl}` : "/assets/default-engineer.png";
   };
 
@@ -46,7 +50,11 @@ export default function BestExEngPage() {
 
   return (
     <>
-      <div className={`mt-7 text-center border-b-2 border-gray-300 ${locale === "ur" ? "font-[Noto Nastaliq Urdu] direction-rtl" : ""}`}>
+      <div
+        className={`mt-7 text-center border-b-2 border-gray-300 ${
+          locale === "ur" ? "font-[Noto Nastaliq Urdu] direction-rtl" : ""
+        }`}
+      >
         <div className="flex justify-center">
           <div className="w-[4px] h-[23px] bg-amber-300"></div>
           <span className="h-[23px] inline-block px-2 bg-white/115 text-black text-xs font-semibold mb-4">
@@ -59,9 +67,15 @@ export default function BestExEngPage() {
       </div>
 
       {/* Engineer Section */}
-      <div className={`flex flex-col lg:flex-row bg-white rounded-xl shadow-2xl max-w-6xl mx-auto my-12 overflow-hidden ${locale === "ur" ? "text-right" : ""}`}>
+      <div
+        className={`flex flex-col lg:flex-row bg-white rounded-xl shadow-2xl max-w-6xl mx-auto my-12 overflow-hidden ${
+          locale === "ur" ? "text-right" : ""
+        }`}
+      >
         {/* Left Content */}
-        <div className={`lg:w-2/3 p-10 flex flex-col justify-center ${contentClasses}`}>
+        <div
+          className={`lg:w-2/3 p-10 flex flex-col justify-center ${contentClasses}`}
+        >
           <div className="text-7xl font-serif text-gray-400 opacity-75 mb-4 leading-none">
             "
           </div>
@@ -74,10 +88,13 @@ export default function BestExEngPage() {
 
           <p className="text-xl text-black font-medium mb-1">
             {engineer?.date
-              ? new Date(engineer.date).toLocaleDateString(locale === "ur" ? "ur-PK" : "en-US", {
-                  month: "long",
-                  year: "numeric",
-                })
+              ? new Date(engineer.date).toLocaleDateString(
+                  locale === "ur" ? "ur-PK" : "en-US",
+                  {
+                    month: "long",
+                    year: "numeric",
+                  }
+                )
               : ""}
           </p>
 
@@ -95,11 +112,23 @@ export default function BestExEngPage() {
                   {Array.from({ length: 5 }, (_, i) => {
                     const ratingValue = Math.round(engineer.rating * 2) / 2;
                     if (ratingValue >= i + 1) {
-                      return <Star key={i} className="text-yellow-500 w-5 h-5 fill-yellow-500" />;
+                      return (
+                        <Star
+                          key={i}
+                          className="text-yellow-500 w-5 h-5 fill-yellow-500"
+                        />
+                      );
                     } else if (ratingValue >= i + 0.5) {
-                      return <StarHalf key={i} className="text-yellow-500 w-5 h-5 fill-yellow-500" />;
+                      return (
+                        <StarHalf
+                          key={i}
+                          className="text-yellow-500 w-5 h-5 fill-yellow-500"
+                        />
+                      );
                     } else {
-                      return <StarOff key={i} className="text-yellow-400 w-5 h-5" />;
+                      return (
+                        <StarOff key={i} className="text-yellow-400 w-5 h-5" />
+                      );
                     }
                   })}
                 </span>
@@ -111,7 +140,9 @@ export default function BestExEngPage() {
         </div>
 
         {/* Right Image */}
-        <div className={`lg:w-1/3 relative overflow-hidden rounded-r-xl lg:rounded-l-none ${imageClasses}`}>
+        <div
+          className={`lg:w-1/3 relative overflow-hidden rounded-r-xl lg:rounded-l-none ${imageClasses}`}
+        >
           <img
             src={getImageUrl()}
             alt={engineer?.name || "Engineer"}
@@ -128,10 +159,16 @@ export default function BestExEngPage() {
             </p>
 
             <div className="flex space-x-4">
-              <a href="#" className="bg-yellow-500 p-3 rounded-full hover:bg-yellow-600 transition-colors shadow-lg">
+              <a
+                href="#"
+                className="bg-yellow-500 p-3 rounded-full hover:bg-yellow-600 transition-colors shadow-lg"
+              >
                 <FaInstagram className="w-6 h-6 text-blue-900" />
               </a>
-              <a href="#" className="bg-yellow-500 p-3 rounded-full hover:bg-yellow-600 transition-colors shadow-lg">
+              <a
+                href="#"
+                className="bg-yellow-500 p-3 rounded-full hover:bg-yellow-600 transition-colors shadow-lg"
+              >
                 <FaFacebookF className="w-6 h-6 text-blue-900" />
               </a>
             </div>

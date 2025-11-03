@@ -17,7 +17,8 @@ export default async function Home() {
     console.error("Error loading posts:", error.message);
   }
 
-  const baseUrl = "http://localhost:1337";
+  const baseUrl =
+    "https://karachi-water-sewerage-backend-production.up.railway.app";
 
   // Sort by published date descending
   const latestPosts = posts?.data
@@ -39,7 +40,6 @@ export default async function Home() {
       <CurrentProjects />
       <Officials />
       <Work />
-     
     </>
   );
 }

@@ -2,7 +2,8 @@
 import { getSinglePost } from "@/lib/api";
 import BlogCard from "@/components/BlogCard";
 
-const STRAPI_URL = "http://localhost:1337";
+const STRAPI_URL =
+  "https://karachi-water-sewerage-backend-production.up.railway.app";
 
 // Server-side metadata
 export async function generateMetadata({ params }) {
@@ -26,7 +27,9 @@ export async function generateMetadata({ params }) {
   return {
     title: post.meta_title || post.title,
     description: post.meta_description || "Read this amazing post!",
-    alternates: { canonical: post.canonical_url || `${STRAPI_URL}/blog/${slug}` },
+    alternates: {
+      canonical: post.canonical_url || `${STRAPI_URL}/blog/${slug}`,
+    },
     openGraph: {
       title: post.meta_title || post.title,
       description: post.meta_description || "Read this amazing post!",

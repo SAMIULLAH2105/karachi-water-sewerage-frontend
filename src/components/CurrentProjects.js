@@ -73,7 +73,8 @@ export default function CurrentProjects() {
     );
   }
 
-  const baseUrl = "http://localhost:1337";
+  const baseUrl =
+    "https://karachi-water-sewerage-backend-production.up.railway.app";
 
   return (
     <section

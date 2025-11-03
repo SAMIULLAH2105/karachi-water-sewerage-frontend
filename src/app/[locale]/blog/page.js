@@ -1,4 +1,3 @@
-
 "use client";
 import { useState, useEffect } from "react";
 import { getPosts } from "@/lib/api";
@@ -103,7 +102,7 @@ export default function BlogPage() {
             <BlogCard
               key={post.id}
               post={post}
-              baseUrl="http://localhost:1337"
+              baseUrl="https://karachi-water-sewerage-backend-production.up.railway.app"
             />
           );
         })}

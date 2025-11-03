@@ -47,7 +47,7 @@ export default function AuthorDetailPage() {
   }
 
   const profileImageUrl = author.profile_image
-    ? `http://localhost:1337${author.profile_image.url}`
+    ? `https://karachi-water-sewerage-backend-production.up.railway.app${author.profile_image.url}`
     : null;
 
   return (
@@ -91,7 +91,9 @@ export default function AuthorDetailPage() {
                 <BlogCard
                   key={post.id}
                   post={post}
-                  baseUrl={"http://localhost:1337"}
+                  baseUrl={
+                    "https://karachi-water-sewerage-backend-production.up.railway.app"
+                  }
                 />
               ))
             : null}

@@ -1,4 +1,5 @@
-const STRAPI_URL = "http://localhost:1337/api";
+const STRAPI_URL =
+  "https://karachi-water-sewerage-backend-production.up.railway.app/api";
 
 export async function fetchAPI(endpoint) {
   const url = `${STRAPI_URL}/${endpoint}`;

@@ -12,7 +12,6 @@ export default function AuthorsPage() {
       try {
         const res = await fetchAPI("authors?populate=profile_image");
         setAuthors(res.data || []);
-
       } catch (error) {
         console.error("Error fetching authors:", error);
       } finally {
@@ -37,7 +36,7 @@ export default function AuthorsPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {authors.map((author) => {
             const profileImageUrl = author.profile_image
-              ? `http://localhost:1337${author.profile_image.url}`
+              ? `https://karachi-water-sewerage-backend-production.up.railway.app${author.profile_image.url}`
               : null;
 
             return (
