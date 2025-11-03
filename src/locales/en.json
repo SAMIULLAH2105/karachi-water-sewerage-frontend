@@ -1,0 +1,154 @@
+{
+  "weather": "Weather",
+  "openingHours": "Opening Hours",
+  "monFri": "Mon - Fri: 9am to 5pm",
+  "aboutUs": "About Us",
+  "ourProjects": "Our Projects",
+  "workWithUs": "Work with Us",
+  "careers": "Careers",
+  "rti": "Right to Information",
+  "news": "News & Updates",
+  "history": "History",
+  "vision": "Vision",
+  "sdg": "SDGs Roadmap",
+  "board": "Board of Directors",
+  "management": "Management Team",
+  "psdp": "PSDP/ADP Projects",
+  "ppp": "PPP Projects",
+  "foreign": "IBRD/AIIB Foreign-Funded Projects",
+  "initiatives": "Employee & Customer Initiatives",
+  "tenders": "Tenders",
+  "licenses": "Licenses",
+  "collaborations": "Collaborations",
+  "investments": "Investment Opportunities",
+  "recruitment": "Recruitment",
+  "graduate": "Graduate Program",
+  "consultancies": "Consultancies",
+  "licenseForm": "Groundwater Licence Form",
+  "regulations": "Extraction Regulations",
+  "employee": "Employee Details",
+  "budget": "KW&SC Budget",
+  "coc": "Signed CoC",
+  "latest": "Latest Updates",
+  "press": "Press Release",
+  "gallery": "Media Gallery",
+  "bestEng": "Best Ex. Eng",
+  "alert": "Alert",
+
+  "hero": {
+    "home": "Home",
+    "customerService": "Customer Service",
+    "rightToInfo": "Right to Information",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "title": "Welcome to Our Website",
+    "description": "Discover innovative solutions crafted to make your experience smarter and more seamless.",
+    "getStarted": "Get Started",
+    "bills": "Bills",
+    "tender": "Tender",
+    "truck": "Truck",
+    "connection": "Connection",
+    "complain": "Complain"
+  
+},
+"customerService": {
+    "contact": "Contact",
+    "title": "Customer Services",
+    "payBill": {
+      "title": "Pay your bill",
+      "desc": "Easily manage and pay your monthly statements."
+    },
+    "reportComplaint": {
+      "title": "Report a Complaint",
+      "desc": "Submit a report for any service issues or feedback."
+    },
+    "checkTender": {
+      "title": "Check Tender",
+      "desc": "View and track the status of current tenders."
+    },
+    "onlineTanker": {
+      "title": "Online Tanker Book",
+      "desc": "Schedule and book tanker services online."
+    },
+    "newConnection": {
+      "title": "Request a New Connection",
+      "desc": "Apply for a new service connection in your area."
+    },
+    "faqHelp": {
+      "title": "FAQ & Help Center",
+      "desc": "Find answers to frequently asked questions."
+    }
+  },
+   "officials": {
+    "sectionTagline": "Our Leaders",
+    "title": "Leadership Team"
+  },
+  "work": {
+  "subheading": "How We Work",
+  "heading": "Our Project Videos",
+  "description": "Find out the latest updates on planned projects. See what we're working on in your area and how it might impact you.",
+  "watchTitle": "Watch Project Videos",
+  "links": {
+    "projectVideos": "Project Videos",
+    "waterWise": "Water Wise Programs",
+    "faq": "FAQs",
+    "updates": "Latest Updates",
+    "saveWater": "Save Water Tips",
+    "support": "Support"
+  }
+},
+"contact": {
+  "label": "Contact",
+  "heading": "Get in touch with us",
+  "address": "9th Mile Karsaz, Main Shahrah-e-Faisal, Karachi-75350, Pakistan",
+  "emailLabel": "Email",
+  "email": "info@kwsc.gov.pk",
+  "phoneLabel": "Call Us",
+  "phone": "(+92) 021 111 997 200",
+  "hoursLabel": "Hours",
+  "hours": "Mon – Fri : 9:00 am – 5:00 pm",
+  "form": {
+    "name": "Your name*",
+    "lastName": "Last name",
+    "phone": "Phone Number*",
+    "email": "Email",
+    "message": "Your Message",
+    "submit": "Submit Message"
+  }
+},
+"footer": {
+  "exploreTitle": "EXPLORE",
+  "home": "Home",
+  "blogPosts": "Blog Posts",
+  "categories": "Categories",
+  "about": "About Me",
+  "contact": "Contact",
+  "resourcesTitle": "RESOURCES",
+  "webDevelopment": "Web Development",
+  "jsGuides": "JavaScript Guides",
+  "mernProjects": "MERN Stack Projects",
+  "careerAdvice": "Career Advice",
+  "openSource": "Open Source",
+  "newsletterTitle": "NEWSLETTER",
+  "newsletterDesc": "Subscribe to get the latest blogs and updates delivered straight to your inbox.",
+  "emailPlaceholder": "Enter your email*",
+  "subscribe": "Subscribe",
+  "linkedin": "LinkedIn",
+  "twitter": "Twitter",
+  "github": "GitHub",
+  "rights": "All Rights Reserved by"
+}
+,
+"bestexeng": {
+  "trustedExpertise": "Trusted Expertise",
+  "customerServices": "Customer Services",
+  "currentMonth": "Current Month Best Executive Engineer",
+  "publicRating": "Public Rating",
+  "noRating": "No rating"
+}
+
+
+
+
+
+}
