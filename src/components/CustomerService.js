@@ -45,8 +45,8 @@
 //   return (
 //     <div
 //       className={`
-//       flex flex-col items-center p-4 mx-2 cursor-pointer 
-//       transition-all duration-300 ease-in-out transform hover:scale-[1.02] 
+//       flex flex-col items-center p-4 mx-2 cursor-pointer
+//       transition-all duration-300 ease-in-out transform hover:scale-[1.02]
 //       hover:shadow-lg rounded-xl flex-shrink-0 w-32 md:w-40 lg:w-48
 //       group
 //     `}
@@ -54,13 +54,13 @@
 //       {/* Icon Container with subtle background and highlight */}
 //       <div
 //         className={`
-//         relative p-3 rounded-xl mb-3 
+//         relative p-3 rounded-xl mb-3
 //         bg-white border-2 border-gray-100 shadow-md
 //         group-hover:border-blue-500 transition-colors
 //         ${isHighlighted ? "border-orange-400" : ""}
 //       `}
 //       >
-//         {/* -- ASSET ICON PLACEHOLDER -- 
+//         {/* -- ASSET ICON PLACEHOLDER --
 //           This will use the URL provided in the serviceItems array.
 //         */}
 //         <img
@@ -221,12 +221,12 @@ const CustomerServiceMenu = () => {
     },
     {
       title: t.newConnection.title,
-      imageUrl: "/assets/icons/new_connection.png",
+      imageUrl: "/assets/tank.png",
       description: t.newConnection.desc,
     },
     {
       title: t.faqHelp.title,
-      imageUrl: "/assets/icons/faq_help.png",
+      imageUrl: "/assets/tank.png",
       description: t.faqHelp.desc,
     },
   ];
@@ -331,4 +331,3 @@ const CustomerServiceMenu = () => {
 };
 
 export default CustomerServiceMenu;
-
